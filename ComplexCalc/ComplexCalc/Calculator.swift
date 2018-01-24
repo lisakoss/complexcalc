@@ -28,7 +28,7 @@ class Calculator {
         return lhs / rhs
     }
     
-    // array addition
+    // add the numbers in an array
     func add(_ numbers: [Int]) -> Int {
         var total: Int = 0
         for number in numbers {
@@ -38,7 +38,7 @@ class Calculator {
         return total
     }
     
-    // array multiplication
+    // multiply the numbers in an array
     func multiply(_ numbers: [Int]) -> Int {
         var total: Int = 0
         for number in numbers {
@@ -51,5 +51,15 @@ class Calculator {
     // count numbers in an array
     func count(_ numbers: [Int]) -> Int {
         return numbers.count
+    }
+    
+    // average numbers in an array
+    func avg(_ numbers: [Int]) -> Int {
+        var total: Int = 0
+        for number in numbers {
+            total += number
+        }
+        
+        return total / numbers.count
     }
 }
