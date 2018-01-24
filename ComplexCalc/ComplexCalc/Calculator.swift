@@ -86,4 +86,14 @@ class Calculator {
     func subtract(lhs: (Int, Int), rhs: (Int, Int)) -> (Int, Int) {
         return (lhs.0 - rhs.0, lhs.1 - rhs.1)
     }
+    
+    // add two Cartesian points (x, y) in dictionaries
+    func add(lhs: [String : Int], rhs: [String : Int]) -> [String : Int] {
+        return ["x": lhs["x"]! + rhs["x"]!, "y": lhs["y"]! + rhs["y"]!]
+    }
+    
+    // subtract two Cartesian points (x, y) in dictionaries
+    func subtract(lhs: [String : Int], rhs: [String : Int]) -> [String : Int] {
+        return ["x": lhs["x"]! - rhs["x"]!, "y": lhs["y"]! - rhs["y"]!]
+    }
 }
