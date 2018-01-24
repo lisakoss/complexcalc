@@ -76,4 +76,14 @@ class Calculator {
         
         return total
     }
+    
+    // add two Cartesian points (x, y)
+    func add(lhs: (Int, Int), rhs: (Int, Int)) -> (Int, Int) {
+        return (lhs.0 + rhs.0, lhs.1 + rhs.1)
+    }
+    
+    // subtract two Cartesian points (x, y)
+    func subtract(lhs: (Int, Int), rhs: (Int, Int)) -> (Int, Int) {
+        return (lhs.0 - rhs.0, lhs.1 - rhs.1)
+    }
 }
