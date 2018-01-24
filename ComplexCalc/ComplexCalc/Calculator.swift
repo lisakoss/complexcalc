@@ -11,6 +11,7 @@ import Foundation
 // All your work will go in here
 class Calculator {
     
+    // basic +, -, *, / operators
     func add(lhs: Int, rhs: Int) -> Int {
         return lhs + rhs
     }
@@ -27,6 +28,7 @@ class Calculator {
         return lhs / rhs
     }
     
+    // array addition
     func add(_ numbers: [Int]) -> Int {
         var total: Int = 0
         for number in numbers {
@@ -36,6 +38,7 @@ class Calculator {
         return total
     }
     
+    // array multiplication
     func multiply(_ numbers: [Int]) -> Int {
         var total: Int = 0
         for number in numbers {
@@ -43,5 +46,10 @@ class Calculator {
         }
         
         return total
+    }
+    
+    // count numbers in an array
+    func count(_ numbers: [Int]) -> Int {
+        return numbers.count
     }
 }
