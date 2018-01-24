@@ -26,4 +26,22 @@ class Calculator {
     func divide(lhs: Int, rhs: Int) -> Int {
         return lhs / rhs
     }
+    
+    func add(_ numbers: [Int]) -> Int {
+        var total: Int = 0
+        for number in numbers {
+            total += number
+        }
+        
+        return total
+    }
+    
+    func multiply(_ numbers: [Int]) -> Int {
+        var total: Int = 0
+        for number in numbers {
+            total *= number
+        }
+        
+        return total
+    }
 }
