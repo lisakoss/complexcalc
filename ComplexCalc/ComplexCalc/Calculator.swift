@@ -40,7 +40,7 @@ class Calculator {
     
     // multiply the numbers in an array
     func multiply(_ numbers: [Int]) -> Int {
-        var total: Int = 0
+        var total: Int = 1
         for number in numbers {
             total *= number
         }
